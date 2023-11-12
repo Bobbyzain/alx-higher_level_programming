@@ -9,7 +9,7 @@ if __name__ == '__main__':
     elif ap == 0:
         print("{} arguments.".format(ap))
     else:
-        print("{} arguments.".format(ap))
+        print("{} arguments:".format(ap))
         i = 0
         while i < ap:
             print("{}: {}".format((i + 1), arg[i]))

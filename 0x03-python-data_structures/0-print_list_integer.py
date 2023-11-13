@@ -7,5 +7,4 @@ def print_list_integer(my_list=[]):
             elif type(i) == float:
                 print("{:.0f}".format(i))
             else:
-                continue
-
+                pass

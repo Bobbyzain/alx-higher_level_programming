@@ -6,5 +6,3 @@ def print_list_integer(my_list=[]):
                 print("{:d}".format(i))
             elif type(i) == float:
                 print("{:.0f}".format(i))
-            else:
-                pass

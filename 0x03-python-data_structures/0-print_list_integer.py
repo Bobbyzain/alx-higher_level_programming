@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def print_list_integer(my_list=[]):
-    for i in my_list:
-        if type(i) != int:
-            pass
-        else:
-            print("{}".format(i))
+    if len(my_list) > 0:
+        for i in my_list:
+            if type(i) == int or type(i) == float:
+                print("{:.0f}".format(i))
+            else:
+                continue

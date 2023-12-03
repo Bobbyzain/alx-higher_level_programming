@@ -7,5 +7,4 @@ def new_in_list(my_list, idx, element):
         return g
     else:
         g[idx] = element
- 
     return g

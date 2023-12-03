@@ -7,6 +7,6 @@ def print_matrix_integer(matrix=[[]]):
             else:
                 i = 0
                 while i < (len(lists) - 1):
-                    print(lists[i], end=" ")
+                    print("{}".format(lists[i]), end=" ")
                     i += 1
-                print(lists[i])
+                print("{}".format(lists[i]))

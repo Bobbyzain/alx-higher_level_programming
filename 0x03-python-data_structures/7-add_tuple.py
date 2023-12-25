@@ -11,14 +11,14 @@ def add_tuple(tuple_a=(), tuple_b=()):
         if len(tuple_b) >= 2:
             new_tuple = (tuple_a[0] + tuple_b[0], tuple_b[1])
         elif len(tuple_b) == 1:
-            new_tuple = (tuple_a[0] + tuple_b[0], )
+            new_tuple = (tuple_a[0] + tuple_b[0], 0)
         else:
-            new_tuple = ()
+            new_tuple = (0, 0)
     else:
         if len(tuple_b) >= 2:
             new_tuple = (tuple_b[0], tuple_b[1])
         elif len(tuple_b) == 1:
             new_tuple = tuple_b
         else:
-            new_tuple = ()
+            new_tuple = (0, 0)
     return new_tuple

@@ -9,12 +9,14 @@ def roman_to_int(roman_string):
         parser = 0
         numer_size = len(roman_string)
         while parser < numer_size:
+            current_rm = dec[rm.index(roman_string[parser])]
+            previous_rm = dec[rm.index(roman_string[parser - 1])]
             if parser == 0:
-                int_num += dec[rm.index(roman_string[parser])]
+                int_num += current_rm
             else:
-                if dec[rm.index(roman_string[parser])] > dec[rm.index(roman_string[parser - 1])]:
-                    int_num += (dec[rm.index(roman_string[parser])] - (dec[rm.index(roman_string[parser - 1])] * 2))
+                if current_rm > previous_rm:
+                    int_num += (current_rm - (previous_rm * 2))
                 else:
-                    int_num += dec[rm.index(roman_string[parser])]
+                    int_num += current_rm
             parser += 1
     return int_num

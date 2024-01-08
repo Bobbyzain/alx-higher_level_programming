@@ -2,7 +2,7 @@
 def best_score(a_dictionary):
     new_dict = a_dictionary
     score = 0
-    if a_dictionary is None:
+    if a_dictionary is None or len(a_dictionary) == 0:
         return None
     else:
         for i in new_dict:

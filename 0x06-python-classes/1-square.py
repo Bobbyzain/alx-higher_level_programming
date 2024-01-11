@@ -15,7 +15,7 @@ class Square:
         Args:
             sides (int): This is the number of sides possessed by the square
         """
-        self._size = size  #: Attribute definition
+        self.__size = size  #: Attribute definition
         """if self.size == 4:
             print("A square {} sides".format(self.size))
         else:
